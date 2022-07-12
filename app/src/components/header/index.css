@@ -1,0 +1,23 @@
+.header-wrapper {
+    display:flex;
+    justify-content:center;
+    height: 80px;
+    background-color: #2e2a24;
+}
+
+.header-text {
+    display:grid;
+    grid-column-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 45px;
+    font-family: Sans-serif;
+    color: white;
+}
+
+.header-white {
+    /* background: purple; */
+    background:white ;
+    color: #2e2a24;
+    text-align: center;
+    border-radius: 5px;
+}

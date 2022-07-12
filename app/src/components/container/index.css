@@ -1,0 +1,21 @@
+.container-wrapper {
+    margin: auto;
+    width: 60%;
+    height: 100vh;
+    padding: 10px;
+    /* height: 100vh; */
+}
+
+.hide-poem {
+    opacity: 0;
+    pointer-events: none;
+    z-index:-1;
+    height: 0;
+  }
+
+.banner-wrapper {
+    background-color: #fab700;
+    height: auto;
+    width: 100%;
+    margin: auto;
+}
