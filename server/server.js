@@ -1,6 +1,5 @@
 import express, { request } from "express"
 import cors from 'cors'
-import { ObjectId } from "mongodb"
 import bodyParser from "body-parser"
 import { connect, getDB } from "./conn.js"
 
