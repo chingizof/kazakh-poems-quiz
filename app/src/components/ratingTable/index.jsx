@@ -16,10 +16,12 @@ export const RatingTable = () => {
 
     return(
         <div className='rating-wrapper'>
-            <h1>Top Results:</h1>
-            {rating.map((person)=>(
-                <div key={person._id}>{person.name}: {person.score}</div>
-            ))}
+            <div className='rating-content'>
+                <h1>Top Results:</h1>
+                {rating.map((person)=>(
+                    <div key={person._id}>{person.name}: {person.score}</div>
+                ))}
+            </div>
         </div>
     )
 }
