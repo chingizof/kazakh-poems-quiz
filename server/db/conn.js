@@ -1,6 +1,7 @@
 import { MongoClient as mongo } from "mongodb"
+import 'dotenv/config';
 
-const url = "mongodb+srv://cheenv:Net987654321$@salem.wrbh3.mongodb.net/?retryWrites=true&w=majority"
+const url = process.env['MONGODB_URI']
 let db;
 
 const connect = () => {
