@@ -7,7 +7,7 @@ export const RatingTable = () => {
 
     useEffect(() => {
         async function fetchRating() {
-            let response = await axios.get("http://localhost:3001/result")
+            let response = await axios.get("http://kazakh-poems-quiz.vercel.app/result")
             console.log(response)
             setRating(response.data)
         }

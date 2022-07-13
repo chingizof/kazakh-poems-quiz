@@ -1,7 +1,7 @@
-import express, { request } from "express"
+import express from "express"
 import cors from 'cors'
 import bodyParser from "body-parser"
-import { connect, getDB } from "./conn.js"
+import { connect, getDB } from "./db/conn.js"
 
 const app = express()
 
@@ -35,6 +35,6 @@ app.post('/share', (req, res) => {
     res.status(200).send()
 })
 
-app.listen(3001, () => {
+app.listen(5000, () => {
     console.log('listening on 3001')
 })
