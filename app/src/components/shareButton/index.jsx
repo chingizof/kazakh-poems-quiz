@@ -10,8 +10,14 @@ export const ShareButton = ({ result }) => {
 
     return(
         <div className='button-wrapper'>
-            <input id='name' placeholder='Сіздін атыңыз'></input>
-            <button onClick={handleShare}>Нәтижені жіберу</button>
+            <input 
+            id='name' 
+            placeholder='Сіздін атыңыз'
+            className="input-name"
+            type="input"
+            required="yes"
+            />
+            <button className="send-button" onClick={handleShare}>Нәтижені жіберу</button>
         </div>
     )
 }
