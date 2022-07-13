@@ -3,9 +3,9 @@ import './index.css'
 export const ResultItem = ({checkboxColor, answer}) => {
     let ans = ""
     if (checkboxColor == "red") {
-        ans = "Incorrect: "
+        ans = "Дұрыс емес: "
     } else {
-        ans = "Correct: "
+        ans = "Дұрыс: "
     }
     return(
         <div>
