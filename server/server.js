@@ -11,7 +11,7 @@ app.use(bodyParser.json())
 
 connect()
 
-app.get('/result',  (req, res) => {
+app.get('/api/result',  (req, res) => {
     getDB().
     collection('nfactorial').
     find({}).
@@ -26,7 +26,7 @@ app.get('/result',  (req, res) => {
     })
 })
 
-app.post('/share', (req, res) => {
+app.post('/api/share', (req, res) => {
     const newItem = req.body
     getDB().
     collection("nfactorial").
@@ -36,5 +36,5 @@ app.post('/share', (req, res) => {
 })
 
 app.listen(5000, () => {
-    console.log('listening on 3001')
+    console.log('listening on 5000')
 })
