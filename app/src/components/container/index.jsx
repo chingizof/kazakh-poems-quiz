@@ -5,6 +5,7 @@ import {poems} from '../data/poems'
 import { AnswerInput } from '../answerInput'
 import { Footer } from '../footer'
 import { ResultBanner } from '../resultBanner'
+import { RatingTable } from '../ratingTable'
 
 
 export const Container = () => {
@@ -23,6 +24,7 @@ export const Container = () => {
                 <AnswerInput author={poem.author} poemNumber={poemNumber} setPoemNumber={setPoemNumber} setCheckboxColor={setCheckboxColor} result={result} setResult={setResult} resultBannerOn={resultBannerOn} setResultBannerOn={setResultBannerOn} />
             </div>
             <Footer checkboxColor={checkboxColor} poemNumber={poemNumber}/>
+            <RatingTable />
         </div>
     )
 }
