@@ -1,5 +1,5 @@
 import './index.css'
-import {poems} from '../data/poems'
+import {alertSuccess} from '../container'
 
 export const AnswerInput = ({author, poemNumber, setPoemNumber, setCheckboxColor, result, setResult, resultBannerOn, setResultBannerOn}) => {
 
@@ -11,7 +11,7 @@ export const AnswerInput = ({author, poemNumber, setPoemNumber, setCheckboxColor
         console.log(val)
         if (val == author) {
             setCheckboxColor(checkboxColor => [...checkboxColor, "green"])
-            // setCheckboxColor("green")
+            alertSuccess()
             console.log('correct')
             setResult(parseInt(result)+1)
 

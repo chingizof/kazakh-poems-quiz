@@ -1,21 +1,26 @@
 import './index.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Poem } from '../poem'
 import {poems} from '../data/poems'
 import { AnswerInput } from '../answerInput'
 import { Footer } from '../footer'
 import { ResultBanner } from '../resultBanner'
 import { RatingTable } from '../ratingTable'
-
-
+import JSConfetti from "js-confetti";
+const jsConfetti = new JSConfetti();
 
 export const Container = () => {
-
     const [poemNumber, setPoemNumber] = useState(0)
     let poem = poems[poemNumber]
     const [checkboxColor, setCheckboxColor] = useState([]) //right and wrong answers
     const [result, setResult] = useState(0)
     const [resultBannerOn, setResultBannerOn] = useState(false)
+
+    
+    if (checkboxColor[poemNumber]=="green") {
+        alertSuccess()
+        console.log("he")
+    }
 
     return(
         <div className={`container-wrapper`}>
@@ -28,4 +33,11 @@ export const Container = () => {
             <RatingTable />
         </div>
     )
+}
+
+export const alertSuccess = () => {
+    jsConfetti.addConfetti({
+        confettiRadius: 6,
+        confettiNumber: 600,
+    });
 }
