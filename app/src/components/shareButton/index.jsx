@@ -4,7 +4,7 @@ import './index.css'
 export const ShareButton = ({ result }) => {
     const handleShare = () => {
         let val = document.getElementById("name").value
-        axios.post("https://kazakh-poems-quiz.vercel.app/api/share", { name: val, score: result})
+        axios.post("https://kazakh-poems-server.herokuapp.com/api/share", { name: val, score: result})
         window.location.reload()
     }
 
