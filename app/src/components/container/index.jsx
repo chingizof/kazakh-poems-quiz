@@ -16,12 +16,6 @@ export const Container = () => {
     const [result, setResult] = useState(0)
     const [resultBannerOn, setResultBannerOn] = useState(false)
 
-    
-    if (checkboxColor[poemNumber]=="green") {
-        alertSuccess()
-        console.log("he")
-    }
-
     return(
         <div className={`container-wrapper`}>
             <div className={`${resultBannerOn ? "banner-wrapper" : "hide-poem"}`}><ResultBanner result={result} checkboxColor={checkboxColor} /></div>
@@ -40,4 +34,5 @@ export const alertSuccess = () => {
         confettiRadius: 6,
         confettiNumber: 600,
     });
+    console.log("CONFETTI!")
 }

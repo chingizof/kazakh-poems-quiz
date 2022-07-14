@@ -5,6 +5,13 @@ export const AnswerInput = ({author, poemNumber, setPoemNumber, setCheckboxColor
 
     const handleSend = () => {
         if (poemNumber==9){
+            alertSuccess()
+            setTimeout(alertSuccess, 500)
+            setTimeout(alertSuccess, 1000)
+            setTimeout(alertSuccess, 1500)
+            setTimeout(alertSuccess, 2000)
+            setTimeout(alertSuccess, 2500)
+            setTimeout(alertSuccess, 3000)
             setResultBannerOn(true)
         }
         var val = document.getElementById('input-author').value
