@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import { Poem } from '../poem'
 import {poems} from '../data/poems'
 import { AnswerInput } from '../answerInput'
-import { Footer } from '../footer'
+import { CorrectAnswers, Footer } from '../correctAnswers'
 import { ResultBanner } from '../resultBanner'
 import { RatingTable } from '../ratingTable'
 import JSConfetti from "js-confetti";
@@ -23,7 +23,7 @@ export const Container = () => {
                 <Poem name={poem.name} text={poem.text} />
                 <AnswerInput author={poem.author} poemNumber={poemNumber} setPoemNumber={setPoemNumber} setCheckboxColor={setCheckboxColor} result={result} setResult={setResult} resultBannerOn={resultBannerOn} setResultBannerOn={setResultBannerOn} />
             </div>
-            <Footer checkboxColor={checkboxColor} poemNumber={poemNumber}/>
+            <CorrectAnswers checkboxColor={checkboxColor} poemNumber={poemNumber}/>
             <RatingTable />
         </div>
     )

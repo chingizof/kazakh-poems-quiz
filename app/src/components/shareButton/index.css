@@ -13,6 +13,7 @@
     text-align: center;
     padding: 7px 0;
     background: transparent;
+    width: 20px;
     transition: border-color 0.2s;
 }
 
