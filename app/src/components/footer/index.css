@@ -1,0 +1,11 @@
+.footer-wr {
+    width: 100vw;
+    height:20px;
+    color: #2e2a24;
+    background-color: black;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}

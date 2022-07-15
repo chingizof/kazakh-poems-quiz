@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import { Poem } from '../poem'
 import {poems} from '../data/poems'
 import { AnswerInput } from '../answerInput'
-import { CorrectAnswers, Footer } from '../correctAnswers'
+import { CorrectAnswers } from '../correctAnswers'
 import { ResultBanner } from '../resultBanner'
 import { RatingTable } from '../ratingTable'
 import JSConfetti from "js-confetti";
